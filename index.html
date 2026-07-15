@@ -3,78 +3,446 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon">
+                        <img src="image/home.png" alt="">
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img src="image/profile.png" alt="">
+                    </span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img src="image/message.png" alt="">
+                    </span>
+                    <span class="text">Message</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img src="image/photo.png" alt="">
+                    </span>
+                    <span class="text">Photos</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img src="image/settings.png" alt="">
+                    </span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <div class="indicator"></div>  
+        </ul>
+        
+    </div>
+    
+
+
+
+<script>
+   const list = document.querySelectorAll('.list');
+
+function activeLink() {
+    list.forEach((item) =>
+        item.classList.remove('active')
+    );
+
+    this.classList.add('active');
+}
+
+list.forEach((item) =>
+    item.addEventListener('click', activeLink)
+);
+
+
+
+
+</script>
+
 
     
-   <!-- <h2>Programming Courses</h2>
-    <ul>
-        <li>C++</li>
-         <li>C</li>
-          <li>Java</li>
-           <li>Python</li>
-    </ul>
-      
-   
-    <table>
-        <tr>
-            <th>item</th>
-            <th>Price</th>
-         </tr>
-        <tr>
-            <td>samosa</td>
-            <td>Rs.20</td>
-          
-        </tr>
-        <tr>
-            <td>veg roll</td>
-            <td>Rs.35</td>
-        </tr>
-        <tr>
-            <td>vada</td>
-            <td>Rs.25</td>
-        </tr>
-        <tr>
-            <td>dosa</td>
-            <td>Rs.95</td>
-        </tr>
-        <tr>
-            <td>poori</td>
-            <td>Rs.90</td>
-        </tr>
-    </table> -->
-    
-<form action="" autocomplete="off">
-
-    
-<div class="regform" >
-     <h3>Sign Up</h3> 
-    <div class="textlabel">
-        <label for="user">User Name</label><br>
-        <input type="text" id="user" >
-    </div>
-    <div class="textlabel" ">
-        <label for="email">Email</label><br>
-        <input type="email" id="email">
-    </div>
-    <div class="textlabel">
-     <label for="pass">Password</label><br>
-    <input type="Password" id="pass">
-    </div>
-    <div class="radio" >
-    <input type="radio" name="gender" id="male"><label for="male">Male</label>
-    <input type="radio" name="gender" id="female"><label for="female">Female</label>
-    </div> 
-     <div class="btn">
-    <button  type="submit">Register</button>
-    </div>
-
-    </div>
-</form>
-
 
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h2>Background-clip in css</h2>
+<div class="loader">
+    <h1>Text Properties</h1>
+    <p><span> Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit.</span> Numquam placeat vero dignissimos omnis, quasi
+        beatae autem cumque facere dolorem nihil cum! Aperiam,<b>
+        omnis eos optio officia quasi voluptate consequuntur.</b></p>
+</div> -->
+
+<!-- <h1>list properties in html</h1>
+<h3>list 1</h3>
+<ul>
+    <li>Home</li>
+    <li>Product</li>
+    <li>blog</li>
+    <li>Download</li>
+    <li>Contact</li>
+</ul>
+<h3>list2</h3>
+<ul id="two">
+    <li>Home</li>
+    <li>Product</li>
+    <li>blog</li>
+    <li>Download</li>
+    <li>Contact</li>
+</ul>
+
+
+<table width="50%"
+border="1px"
+cellpadding="10px"
+cellspacing="10px">
+<caption>Student Details</caption>
+
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Karthi</td>
+        <td>29</td>
+        <td rowspan="2">India</td>
+    </tr>
+     <tr>
+        <td>Karthi</td>
+        <td>29</td>
+        
+    </tr>
+     <tr>
+        <td>Karthi</td>
+        <td>29</td>
+        
+    </tr>
+    <tfoot>
+       <tr>
+        <td colspan="3">Karthikeyan</td>
+       </tr>
+    </tfoot>
+</table>
+
+<br><br>
+<div class="table">
+    <div class="caption">Sample Table</div>
+    <div class="header">
+        <div class="row">
+            <div class="col">Name</div>
+            <div class="col">Age</div>
+            <div class="col">City</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">karthi</div>
+        <div class="col">23</div>
+        <div class="col">chenai</div>
+    </div>
+    <div class="row">
+        <div class="col">pughazal</div>
+        <div class="col">26</div>
+        <div class="col">coimbatore</div>
+    </div>
+    <div class="row">
+        <div class="col">babu</div>
+        <div class="col">23</div>
+        <div class="col">chennai</div>
+    </div>
+     <div class="row">
+        <div class="col">babu</div>
+        <div class="col">23</div>
+        <div class="col">chennai</div>
+    </div>
+     <div class="footer">
+        <div class="row">
+            <div class="col">karthi</div>
+            <div class="col"></div>
+            <div class="col">3</div>
+        </div>
+    </div>
+</div><br><br><br>
+
+<a href="#">Link1</a>
+<a href="#">Link2</a>
+<a href="#">Link3</a>
+<a href="#">Link4</a> -->
+
+<!-- 
+<div><img src="image/Karthikeyan_image.png" alt="karthi" height="300px" width="300px" data-aos="zoom-out"></div>
+ -->
+
+
+<!--    
+
+
+     <form autocomplete="off" class="form">
+        
+        <div class="signfrm" >
+            <h3>Login</h3>
+            
+            <div class="label">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+            </div>
+            <div class="label">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" placeholder="Enter Password">
+            </div>
+            <div class="check">
+                <input type="checkbox">
+                <label>Show Password</label>
+            </div>
+            <div class="sign">
+                <button>SIGN IN</button>
+            </div>
+            <div class="redirect">
+                <label>Forget <a href="login.html">Username ; password?</a></label><br>
+                <label>Don't have an account?<a href="index.html" target="_blank">Sign up</a></label>
+            </div>
+        </div>
+    </form>  -->
+    
+<!--    
+        <div class="container">
+        <p class="para1">Lorem ipsum dolor sit dfdf sdfg sfd gsd gds g gd gd g sdfsdfgdd gdfgdgsdfg fdgsdgs gd  amet consectetur adipisicing elit. Fuga incidunt sequi repellendus beatae dicta voluptate sed, laboriosam culpa illo nemo iusto qui impedit labore eius accusamus dolor quis similique laborum?</p>
+        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum obcaecati impedit deserunt fugit consequuntur laborum dolorum incidunt. Harum minima cum maiores, laborum explicabo temporibus vero. Cupiditate maiores rerum quidem provident, quisquam molestias, animi doloremque amet, recusandae mollitia ullam accusantium hic magni repellat modi tempora dolore numquam cumque molestiae aliquid. Vitae?</p>
+        <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum obcaecati impedit deserunt fugit consequuntur laborum dolorum incidunt. Harum minima cum maiores, laborum explicabo temporibus vero. Cupiditate maiores rerum quidem provident, quisquam molestias, animi doloremque amet, recusandae mollitia ullam accusantium hic magni repellat modi tempora dolore numquam cumque molestiae aliquid. Vitae?</p>
+    </div> -->
+
+<!-- <div class="container">
+    <div class="box1"></div>
+     <div class="box2"></div>
+      <div class="box3"></div>
+       <div class="box4"></div>
+       </div> -->
+
+<!--  
+
+
+<div class="outerbox">
+        <div class="box box7">1 </div>
+                <div class="box box6">2</div>
+        <div class="box box1">3</div>
+        <div class="box box2">4</div>
+        <div class="box box3">5</div>
+        <div class="box box4">6</div>
+        <div class="box box5">7</div>
+     </div>
+       <div class="container">
+        <div class="para">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore quibusdam consectetur porro dolores minima vitae saepe nemo molestiae eum adipisci fugiat enim, et qui necessitatibus minus eos sed consequatur!</p>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt adipisci nemo, in nihil corporis veritatis consequuntur debitis facilis omnis aperiam accusamus, beatae, magni animi ad soluta. Ipsa, beatae eveniet?</p>
+
+         
+        <div class="para1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, aut sequi aliquam nihil numquam cupiditate reprehenderit eum ea dolorum amet distinctio impedit. Dignissimos iure deserunt ab inventore quod rerum eius?</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At vero odio corporis! Nostrum ipsam ipsa facilis ea, impedit maiores voluptatem quas, quasi quidem tempore hic suscipit, voluptate iste temporibus cum?</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestias quas quibusdam asperiores neque. Ex quae ab illum quam alias totam natus eius illo officia nemo, cupiditate pariatur quibusdam neque.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui neque voluptatem ad blanditiis nam magni deserunt corrupti quidem iure autem saepe distinctio veritatis, aspernatur fugiat ea libero aliquam incidunt. Porro.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quod animi quidem saepe, aliquid explicabo amet repellendus porro ad est ipsam quaerat odit quas id, alias nobis, ducimus voluptates quo.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi saepe soluta pariatur sequi reprehenderit nam quas animi blanditiis, corrupti harum dignissimos molestiae error quibusdam id libero tempora magni. Voluptates, fuga!</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque, voluptatibus consequuntur error eius facilis sed maiores similique, at unde impedit! Placeat aliquam ex eaque iste dolorem vel labore aliquid.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci iste, beatae asperiores quod repudiandae, laudantium deleniti quo tempora repellat dignissimos delectus quos deserunt expedita quis, fugiat laboriosam vero assumenda omnis.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dicta pariatur, accusantium rerum suscipit harum odio dignissimos a asperiores, ipsam quod laboriosam commodi doloribus, aliquid esse in perferendis ratione soluta!</p>
+        </div>
+       </div> -->
+
+<!-- 
+       <div class="layout">
+        <div class="header">header</div>
+        <div class="sidebar1">sidebar1</div>
+        <div class="maincontent">maincontent</div>
+        <div class="sidebar2">sidebar2</div>
+        <div class="footer">footer</div>
+       </div> -->
+
+       <!-- <div class="square"></div> -->
+
+<!-- 
+this is nav links
+<nav>
+     <ul>
+       <li><a href="#">Products</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Downloads</a></li>
+       <li><a href="#">Contacts Us</a></li>
+    </ul>
+</nav> -->
+
+
+
+<!-- this is responsive nav bar using js -->
+<!-- <div class="navbar">
+    <div class="logo">Karthikeyan</div>
+    <a href="#" class="btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Download</a></li>
+        </ul>
+    </div>
+</div>
+
+ -->
+
+<!-- this is table style using css -->
+
+<!-- <table>
+    <h2>table Style in css</h2>
+    <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+          <td>Ram</td>
+           <td>25</td>
+           <td>Salem</td>
+           <td>Active</td>
+        </tr>
+        <tr>
+          <td>karthi</td>
+           <td>24</td>
+           <td>Chennai</td>
+           <td>Active</td>
+        </tr>
+        <tr>
+          <td>kumar</td>
+           <td>25</td>
+           <td>Salem</td>
+           <td>Not Active</td>
+        </tr>
+        <tr>
+          <td>Arun</td>
+           <td>27</td>
+           <td>Bomboy</td>
+           <td>Active</td>
+        </tr>
+        <tr>
+          <td>Siva</td>
+           <td>30</td>
+           <td>Salem</td>
+           <td>Active</td>
+        </tr>
+     </tbody>
+</table> -->
+
+<!-- 
+this is navbar style in css -->
+<!-- 
+    <div class="header">
+        <div class="logo">Karthikeyan</div>
+        <button class="header-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <div class="side-nav">
+        <div class="links ">
+            <a href="#" class="link active" active>Home</a>
+            <a href="#" class="link">Product</a>
+            <a href="#" class="link">Contact</a>
+            <a href="" class="link">Download</a>
+        </div>
+        <div class="nav-overlay">
+
+        </div>
+
+    </div>
+    <div class="content">
+        <h2>page title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eveniet facilis dolore ullam natus dignissimos nobis cupiditate aperiam possimus, sunt cumque, eum illo nulla impedit, repudiandae doloribus unde sapiente labore eius placeat? Modi, quis amet? Atque magnam natus quos, dolore rem neque optio porro, ex, saepe consequatur a voluptatibus? Omnis!</p>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- this is spinning -->
+<!-- 
+ <div id="container">
+    <div id="box">
+        <div id="spinner"></div>
+        <div id="para">Please wait while  loading...</div>
+    </div>
+ </div> -->
