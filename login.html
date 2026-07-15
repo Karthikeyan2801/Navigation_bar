@@ -3,12 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon">
+                        <img src="image/home.png" alt="">
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img src="image/profile.png" alt="">
+                    </span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img src="image/message.png" alt="">
+                    </span>
+                    <span class="text">Message</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img src="image/photo.png" alt="">
+                    </span>
+                    <span class="text">Photos</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img src="image/settings.png" alt="">
+                    </span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <div class="indicator"></div>  
+        </ul>
+        
+    </div>
+    
 
-   
+
+
+<script>
+   const list = document.querySelectorAll('.list');
+
+function activeLink() {
+    list.forEach((item) =>
+        item.classList.remove('active')
+    );
+
+    this.classList.add('active');
+}
+
+list.forEach((item) =>
+    item.addEventListener('click', activeLink)
+);
+
+
+
+
+</script>
+
+
+    
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h2>Background-clip in css</h2>
+<div class="loader">
+    <h1>Text Properties</h1>
+    <p><span> Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit.</span> Numquam placeat vero dignissimos omnis, quasi
+        beatae autem cumque facere dolorem nihil cum! Aperiam,<b>
+        omnis eos optio officia quasi voluptate consequuntur.</b></p>
+</div> -->
+
+<!-- <h1>list properties in html</h1>
+<h3>list 1</h3>
+<ul>
+    <li>Home</li>
+    <li>Product</li>
+    <li>blog</li>
+    <li>Download</li>
+    <li>Contact</li>
+</ul>
+<h3>list2</h3>
+<ul id="two">
+    <li>Home</li>
+    <li>Product</li>
+    <li>blog</li>
+    <li>Download</li>
+    <li>Contact</li>
+</ul>
+
+
+<table width="50%"
+border="1px"
+cellpadding="10px"
+cellspacing="10px">
+<caption>Student Details</caption>
+
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Karthi</td>
+        <td>29</td>
+        <td rowspan="2">India</td>
+    </tr>
+     <tr>
+        <td>Karthi</td>
+        <td>29</td>
+        
+    </tr>
+     <tr>
+        <td>Karthi</td>
+        <td>29</td>
+        
+    </tr>
+    <tfoot>
+       <tr>
+        <td colspan="3">Karthikeyan</td>
+       </tr>
+    </tfoot>
+</table>
+
+<br><br>
+<div class="table">
+    <div class="caption">Sample Table</div>
+    <div class="header">
+        <div class="row">
+            <div class="col">Name</div>
+            <div class="col">Age</div>
+            <div class="col">City</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">karthi</div>
+        <div class="col">23</div>
+        <div class="col">chenai</div>
+    </div>
+    <div class="row">
+        <div class="col">pughazal</div>
+        <div class="col">26</div>
+        <div class="col">coimbatore</div>
+    </div>
+    <div class="row">
+        <div class="col">babu</div>
+        <div class="col">23</div>
+        <div class="col">chennai</div>
+    </div>
+     <div class="row">
+        <div class="col">babu</div>
+        <div class="col">23</div>
+        <div class="col">chennai</div>
+    </div>
+     <div class="footer">
+        <div class="row">
+            <div class="col">karthi</div>
+            <div class="col"></div>
+            <div class="col">3</div>
+        </div>
+    </div>
+</div><br><br><br>
+
+<a href="#">Link1</a>
+<a href="#">Link2</a>
+<a href="#">Link3</a>
+<a href="#">Link4</a> -->
+
+<!-- 
+<div><img src="image/Karthikeyan_image.png" alt="karthi" height="300px" width="300px" data-aos="zoom-out"></div>
+ -->
+
+
+<!--    
+
+
      <form autocomplete="off" class="form">
         
         <div class="signfrm" >
@@ -34,9 +244,7 @@
                 <label>Don't have an account?<a href="index.html" target="_blank">Sign up</a></label>
             </div>
         </div>
-    </form> 
-    
-  
+    </form>  -->
     
 <!--    
         <div class="container">
@@ -100,8 +308,6 @@
         </div>
        </div> -->
 
-
-
 <!-- 
        <div class="layout">
         <div class="header">header</div>
@@ -113,6 +319,130 @@
 
        <!-- <div class="square"></div> -->
 
-       <div class="box"></div>
-</body>
-</html>
+<!-- 
+this is nav links
+<nav>
+     <ul>
+       <li><a href="#">Products</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Downloads</a></li>
+       <li><a href="#">Contacts Us</a></li>
+    </ul>
+</nav> -->
+
+
+
+<!-- this is responsive nav bar using js -->
+<!-- <div class="navbar">
+    <div class="logo">Karthikeyan</div>
+    <a href="#" class="btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Download</a></li>
+        </ul>
+    </div>
+</div>
+
+ -->
+
+<!-- this is table style using css -->
+
+<!-- <table>
+    <h2>table Style in css</h2>
+    <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+          <td>Ram</td>
+           <td>25</td>
+           <td>Salem</td>
+           <td>Active</td>
+        </tr>
+        <tr>
+          <td>karthi</td>
+           <td>24</td>
+           <td>Chennai</td>
+           <td>Active</td>
+        </tr>
+        <tr>
+          <td>kumar</td>
+           <td>25</td>
+           <td>Salem</td>
+           <td>Not Active</td>
+        </tr>
+        <tr>
+          <td>Arun</td>
+           <td>27</td>
+           <td>Bomboy</td>
+           <td>Active</td>
+        </tr>
+        <tr>
+          <td>Siva</td>
+           <td>30</td>
+           <td>Salem</td>
+           <td>Active</td>
+        </tr>
+     </tbody>
+</table> -->
+
+<!-- 
+this is navbar style in css -->
+<!-- 
+    <div class="header">
+        <div class="logo">Karthikeyan</div>
+        <button class="header-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <div class="side-nav">
+        <div class="links ">
+            <a href="#" class="link active" active>Home</a>
+            <a href="#" class="link">Product</a>
+            <a href="#" class="link">Contact</a>
+            <a href="" class="link">Download</a>
+        </div>
+        <div class="nav-overlay">
+
+        </div>
+
+    </div>
+    <div class="content">
+        <h2>page title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eveniet facilis dolore ullam natus dignissimos nobis cupiditate aperiam possimus, sunt cumque, eum illo nulla impedit, repudiandae doloribus unde sapiente labore eius placeat? Modi, quis amet? Atque magnam natus quos, dolore rem neque optio porro, ex, saepe consequatur a voluptatibus? Omnis!</p>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- this is spinning -->
+<!-- 
+ <div id="container">
+    <div id="box">
+        <div id="spinner"></div>
+        <div id="para">Please wait while  loading...</div>
+    </div>
+ </div> -->
